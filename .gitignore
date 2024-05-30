@@ -1,0 +1,41 @@
+# Ignore build output directories
+/build/
+/out/
+/Debug/
+/Release/
+/x64/
+/x86/
+/arm/
+/cmake-build-debug/
+/cmake-build-release/
+/cmake-build-debug-coverage-1/
+/cmake-build-minsizerel/
+/cmake-build-relwithdebinfo/
+/cmake-build-release-with-03/
+
+# Ignore Visual Studio user-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Ignore Visual Studio Code settings
+.vscode/
+.vs/
+# Ignore CMake generated files
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+*.cmake
+Makefile
+
+# Ignore vcpkg
+/vcpkg/
+/vcpkg_installed/
+
+# Ignore other common files
+*.log
+*.swp
+*.bak
+*.tmp
+*~
