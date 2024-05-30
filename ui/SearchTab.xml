@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+    <requires lib="gtk" version="4.0"/>
+    <object class="GtkScrolledWindow" id="main">
+        <property name="hexpand">True</property>
+        <property name="vexpand">True</property>
+        <property name="margin-start">10</property>
+        <property name="margin-end">10</property>
+        <property name="margin-top">10</property>
+        <property name="margin-bottom">10</property>
+        <child>
+            <object class="GtkOverlay">
+                <property name="hexpand">True</property>
+                <property name="vexpand">True</property>
+                <child>
+                    <object class="GtkListBox" id="searchHits">
+                        <property name="hexpand">True</property>
+                        <property name="vexpand">True</property>
+                    </object>
+                </child>
+                <child type="overlay">
+                    <object class="GtkBox" id="loadingOverlay">
+                        <property name="orientation">1</property>
+                        <property name="spacing">10</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                        <child>
+                        <object class="GtkSpinner" id="loadingSpinner">
+                            <property name="halign">center</property>
+                            <property name="valign">center</property>
+                        </object>
+                        </child>
+                        <child>
+                        <object class="GtkLabel" id="loadingLabel">
+                            <property name="label" translatable="yes">loading...</property>
+                            <property name="halign">center</property>
+                            <property name="valign">center</property>
+                        </object>
+                        </child>
+                    </object>
+                </child>
+            </object>
+        </child>
+</object>
+</interface>

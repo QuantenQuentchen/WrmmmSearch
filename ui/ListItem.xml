@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+    <requires lib="gtk" version="4.0"/>
+    <object class="GtkBox" id="main">
+        <property name="orientation">0</property>
+        <property name="hexpand">True</property>
+        <child>
+            <object class="GtkLabel" id="listItemLabel">
+                <property name="label" translatable="yes">Title</property>
+                <property name="halign">start</property>
+                <property name="hexpand">True</property>
+                <property name="margin-start">10</property>
+                <style>
+                    <class name="title-1"/>
+                </style>
+            </object>
+        </child>
+        <child>
+            <object class="GtkButton" id="listItemButton">
+                <property name="label" translatable="yes">D</property>
+                <property name="halign">end</property>
+                <property name="hexpand">True</property>
+                <property name="margin-end">10</property>
+                <property name="margin-start">5</property>
+                <style>
+                </style>
+            </object>
+        </child>
+</object>
+</interface>

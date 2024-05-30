@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk" version="4.0"/>
+  <object class="GtkBox" id="main">
+    <property name="orientation">1</property>
+    <property name="hexpand">True</property>
+    <child>
+      <object class="GtkBox" id="SearchTermBox">
+        <property name="orientation">0</property>
+        <property name="valign">1</property>
+        <property name="halign">0</property>
+        <property name="hexpand">True</property>
+        <child>
+          <object class="GtkSearchEntry" id="searchRootEntry">
+            <property name="text">Enter Search Root</property>
+            <property name="margin-end">5</property>
+            <property name="margin-start">10</property>
+            <property name="hexpand">True</property>
+            <style>
+              <class name="icon-dropshadow"/>
+            </style>
+          </object>
+        </child>
+        <child>
+          <object class="GtkButton" id="refreshRootButton">
+            <property name="label" translatable="true">D</property>
+            <property name="margin-end">10</property>
+            <property name="margin-start">5</property>
+            <style>
+              <class name="title-1"/>
+            </style>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="GtkBox" id="SearchRootBox">
+        <property name="orientation">0</property>
+        <property name="valign">1</property>
+        <property name="halign">0</property>
+        <property name="hexpand">True</property>
+        <property name="margin-top">10</property>
+        <child>
+          <object class="GtkSearchEntry" id="searchEntry">
+            <property name="text">Enter Search Term</property>
+            <property name="margin-end">5</property>
+            <property name="margin-start">10</property>
+            <property name="hexpand">True</property>
+            <style>
+              <class name="icon-dropshadow"/>
+            </style>
+          </object>
+        </child>
+        <child>
+          <object class="GtkButton" id="searchButton">
+            <property name="label" translatable="true">D</property>
+            <property name="margin-end">10</property>
+            <property name="margin-start">5</property>
+            <style>
+              <class name="title-1"/>
+            </style>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="GtkBox">
+        <property name="halign">center</property>
+        <child>
+          <object class="GtkButton" id="updateButton">
+            <property name="label" translatable="true">Update</property>
+            <property name="margin-end">10</property>
+            <property name="margin-start">10</property>
+            <property name="margin-bottom">10</property>
+            <property name="margin-top">10</property>
+            <style>
+              <class name="title-1"/>
+            </style>
+          </object>
+        </child>
+      </object>
+
+    </child>
+    <child>
+      <object class="GtkNotebook" id="searchNotebook">
+        <property name="margin-top">10</property>
+        <property name="margin-end">10</property>
+        <property name="margin-start">10</property>
+        <property name="margin-bottom">10</property>
+        <property name="hexpand">True</property>
+        <property name="vexpand">True</property>
+        <child>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

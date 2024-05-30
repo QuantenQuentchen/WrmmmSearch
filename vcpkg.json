@@ -1,0 +1,12 @@
+{
+  "name": "wrmmm-search",
+  "version-string": "0.1.0",
+  "dependencies": [
+    {
+      "name": "sqlite-modern-cpp"
+    },
+    {
+      "name": "sqlite3"
+    }
+  ]
+}
